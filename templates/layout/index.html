@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <marquee direction="left"><h1>WELCOME TO MY WEBSITE!!!</h1></marquee>
+    <br>
+    <br>
+
+    {% include "layout/menu.html" %}
+        {% if True %}
+            <h1>If bernilai True, maka aku ada</h1>
+        {% endif %}
+
+        {{ nama | upper }}
+
+        {% for b in buah %}
+            <li>
+                {{ b }}
+            </li>
+        {% endfor %}
+    </body>
+</body>
+</html>
