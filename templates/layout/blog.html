@@ -34,11 +34,11 @@
  
     </table>
 
-    <ul>
         {% for blog in blogs %}
-            <li>{{ blog.judul }} - {{ blog.tanggal }}</li>
-        {% endfor %}
-    </ul>
+            <h3>{{ blog.judul }}</h3>
+            oleh <i>{{ blog.penulis }}</i> - {{ blog.tanggal }}
+            <hr>
+        {% endfor %}        
 
 </body>
 </html>
