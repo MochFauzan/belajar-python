@@ -34,5 +34,11 @@
  
     </table>
 
+    <ul>
+        {% for blog in blogs %}
+            <li>{{ blog.judul }} - {{ blog.tanggal }}</li>
+        {% endfor %}
+    </ul>
+
 </body>
 </html>
