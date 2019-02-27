@@ -36,6 +36,7 @@
 
         {% for blog in blogs %}
             <h3>{{ blog.judul }}</h3>
+            <h5>{{ blog.Kategori }} - {{ blog.Kategori.keterangan }}</h5>
             oleh <i>{{ blog.penulis }}</i> - {{ blog.tanggal }}
             <hr>
         {% endfor %}        
