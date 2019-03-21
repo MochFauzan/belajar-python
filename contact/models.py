@@ -7,7 +7,7 @@ from django.db import models
 
 class Contact(models.Model):
     email = models.CharField(max_length=30)
-    twitter = models.CharField(max_length=30)
+    twitter = models.CharField(max_length=30, null=True) # Jika twitter boleh tidak di isi 
     github = models.CharField(max_length=30)
     no_hp = models.CharField(max_length=12)
 

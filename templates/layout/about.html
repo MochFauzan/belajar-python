@@ -12,5 +12,10 @@
 
     {% include "layout/menu.html" %}
 
+    {% for about in abouts %}
+        <h1>{{ about.nama }}</h1>
+        {{ about.biodata }}
+    {% endfor %}
+
 </body>
 </html>

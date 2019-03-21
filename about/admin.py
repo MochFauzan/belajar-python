@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.contrib import admin
-from blog.models import Artikel, Kategori
+from about.models import About
 
 # Register your models here.
-admin.site.register(Artikel)
-admin.site.register(Kategori)
+admin.site.register(About)
