@@ -10,6 +10,7 @@ class Contact(models.Model):
     twitter = models.CharField(max_length=30, null=True) # Jika twitter boleh tidak di isi 
     github = models.CharField(max_length=30)
     no_hp = models.CharField(max_length=12)
+    publish = models.BooleanField(default=True)
 
     def __unicode__(self):
         return self.email

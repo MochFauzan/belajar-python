@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 from django.shortcuts import render, HttpResponse
 from blog.models import Artikel
+from about.models import About
 from blog.form import FormTambahArtikel
 
 # Create your views here.
@@ -12,7 +13,8 @@ def index(request):
     return render(request, 'layout/index.html',{'nama':nama, 'buah':buah})
 
 def about(request):
-    return render(request, 'layout/about.html')
+    abouts = About.objects.filter(publish=True)
+    return render(request, 'layout/about.html', {'abouts':abouts})
 
 def contact(request):
     return render(request, 'layout/contact.html')
